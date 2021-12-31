@@ -4,8 +4,9 @@ import sys
 
 firstline = True
 count = 0
+window = 3
 
-for x in map(str.rstrip, sys.stdin):
+for x in map(lambda x: int(str.rstrip(x)), sys.stdin):
     if firstline:
         firstline = False
         y = x
